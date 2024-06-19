@@ -1,0 +1,4 @@
+@EndUserText.label: 'Elizible Amount Service Defination 01'
+define service ZSD_ELIZIBLEAMT01 {
+  expose ZELIZIBLEAMOUNT_CDS;
+}

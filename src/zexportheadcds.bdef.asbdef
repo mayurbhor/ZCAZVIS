@@ -1,0 +1,39 @@
+unmanaged implementation in class zbp_exportheadcds unique;
+//strict ( 2 );
+
+define behavior for zexportheadcds //alias <alias_name>
+//persistent table zexportheader
+//lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly : update ) compcode, salesdocument;
+  association _item { create; }
+}
+
+define behavior for zexportitemcds //alias <alias_name>
+//persistent table zexportitem
+//lock dependent by _head
+authorization dependent by _head
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly : update ) Salesdocument, Compcode, lictype;
+  association _head;
+}
+
+define behavior for zexportdoccds //alias <alias_name>
+//persistent table zexportitem
+//lock dependent by _head
+authorization dependent by _head
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly : update ) Billingdocument, Compcode,Salesdocument;
+  association _head;
+}

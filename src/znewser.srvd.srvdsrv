@@ -1,0 +1,4 @@
+@EndUserText.label: 'new ser'
+define service Znewser {
+  expose znewcds;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'DBK Master'
+define service Zdbkmasterser {
+  expose zdbkmastercds as dbkmaster;
+}

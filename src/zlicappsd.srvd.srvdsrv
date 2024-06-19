@@ -1,0 +1,4 @@
+@EndUserText.label: 'License Application Service Defination'
+define service ZLICAPPSD {
+  expose ZLICAPPCDS as LiceseTypeApp;
+}

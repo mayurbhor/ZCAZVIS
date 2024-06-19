@@ -1,0 +1,5 @@
+@EndUserText.label: 'BillingDoc API'
+define service Zbillingdocapiser {
+  expose zbillingapiexp  as billingapi;
+  expose zbillingapiitem as billingitem;
+}

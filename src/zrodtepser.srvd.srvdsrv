@@ -1,0 +1,4 @@
+@EndUserText.label: 'Rod TEP SER'
+define service Zrodtepser {
+  expose zrodtepcds as rodtepcds;
+}

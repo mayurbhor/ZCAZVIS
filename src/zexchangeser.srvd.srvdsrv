@@ -1,0 +1,4 @@
+@EndUserText.label: 'Exchange Rate Ser'
+define service Zexchangeser {
+  expose zexchangeratecds as exhangerate;
+}

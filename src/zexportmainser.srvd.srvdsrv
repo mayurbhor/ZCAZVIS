@@ -1,0 +1,6 @@
+@EndUserText.label: 'Export Main Ser'
+define service Zexportmainser {
+  expose zexportheadcds as exportmain;
+  expose zexportitemcds as exportitem;
+  expose zexportdoccds  as exportdoc;
+}

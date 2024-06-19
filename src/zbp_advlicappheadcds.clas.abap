@@ -1,0 +1,5 @@
+CLASS zbp_advlicappheadcds DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zadvlicappheadcds.
+ENDCLASS.
+
+CLASS zbp_advlicappheadcds IMPLEMENTATION.
+ENDCLASS.

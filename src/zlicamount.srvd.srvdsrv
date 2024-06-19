@@ -1,0 +1,4 @@
+@EndUserText.label: 'Amount Ser'
+define service Zlicamount {
+  expose zlicamount as licamount;
+}

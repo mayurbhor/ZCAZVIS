@@ -1,0 +1,15 @@
+managed;// implementation in class zbp_dbkmastercds unique;
+//strict ( 2 );
+
+define behavior for zdbkmastercds //alias <alias_name>
+persistent table zdbkmaster
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  field( readonly:update ) Compcode,Material;
+}

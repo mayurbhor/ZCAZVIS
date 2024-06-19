@@ -1,0 +1,4 @@
+@EndUserText.label: 'Plant Bupla Ser'
+define service Zplantbuplaser {
+  expose zplantbuplacds as buplacds;
+}

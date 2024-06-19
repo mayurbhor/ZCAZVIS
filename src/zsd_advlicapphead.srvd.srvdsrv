@@ -1,0 +1,5 @@
+@EndUserText.label: 'Advance License Application Service Defination'
+define service ZSD_ADVLICAPPHEAD {
+  expose ZADVLICAPPHEADCDS;
+  expose ZADVLICAPPITEMCDS;
+}

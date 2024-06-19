@@ -1,0 +1,4 @@
+@EndUserText.label: 'Amount Ser'
+define service Zlcamt2 {
+  expose zlicamount2 as amt2;
+}

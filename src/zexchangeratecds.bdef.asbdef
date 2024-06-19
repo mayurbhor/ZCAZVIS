@@ -1,0 +1,15 @@
+managed;// implementation in class zbp_exchangeratecds unique;
+//strict ( 2 );
+
+define behavior for zexchangeratecds //alias <alias_name>
+persistent table zexchange
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+
+}

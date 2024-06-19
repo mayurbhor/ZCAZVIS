@@ -1,0 +1,4 @@
+@EndUserText.label: 'HSN ser'
+define service Zhsnser {
+  expose zhsn as hsn;
+}

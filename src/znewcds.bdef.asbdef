@@ -1,0 +1,22 @@
+managed implementation in class zbp_newcds unique;
+strict ( 2 );
+
+define behavior for znewcds //alias <alias_name>
+persistent table znew
+lock master
+authorization master ( instance )
+//etag master <field_name>
+early numbering
+//late numbering
+{
+  create;
+  update;
+  delete;
+
+  field( readonly:update ) char1, Num1 ;
+
+
+
+
+
+}

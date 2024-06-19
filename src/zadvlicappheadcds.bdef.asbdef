@@ -1,0 +1,28 @@
+managed implementation in class zbp_advlicappheadcds unique;
+//strict ( 2 );
+
+define behavior for ZADVLICAPPHEADCDS //alias <alias_name>
+persistent table zadvlicapp
+lock master
+authorization master ( instance )
+//etag master <field_name>
+early numbering
+{
+  create;
+  update;
+  delete;
+  association _item { create; }
+  //field(readonly : update,numbering : managed) Application_No;
+}
+
+define behavior for ZADVLICAPPITEMCDS //alias <alias_name>
+persistent table zadvlicappitem
+lock dependent by _head
+authorization dependent by _head
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) Sion_no,Application_No;
+  association _head;
+}

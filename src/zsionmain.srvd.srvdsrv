@@ -1,0 +1,5 @@
+@EndUserText.label: 'SION Main'
+define service Zsionmain {
+  expose zsionmain    as sionmain;
+  expose zsionitemcds as sionitem;
+}

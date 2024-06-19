@@ -1,0 +1,4 @@
+@EndUserText.label: 'PRod Ser'
+define service Zprodser {
+  expose zprod as prod;
+}

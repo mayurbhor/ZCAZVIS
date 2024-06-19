@@ -1,0 +1,30 @@
+unmanaged implementation in class zbp_sionmain unique ;
+//strict ( 2 );
+
+define behavior for zsionmain //alias <alias_name>
+//persistent table zsionhead
+//lock master
+authorization master ( instance )
+//etag master <field_name>
+late numbering
+{
+  create;
+  update;
+  delete;
+
+  field( readonly : update ) Compcode,Material,Sion;
+  association _item { create; }
+
+}
+
+define behavior for zsionitemcds //alias <alias_name>
+//persistent table zsionitem
+//lock dependent by _head
+authorization dependent by _head
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly:update ) Sion, Material, Compcode,itemno;
+  association _head;
+}
